@@ -14,4 +14,5 @@ class Medio(object):
         #y devolver la senal 
         for blanco in self.blancos:
             print "para cada blanco" 
+            print blanco.reflejar(una_senal, tiempo_inicial, tiempo_final)
         pass
