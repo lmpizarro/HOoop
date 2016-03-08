@@ -1,7 +1,7 @@
 import radar
 import medio
 import blanco
-import generador
+import generador as gen
 import datetime
 import detector
 
@@ -25,6 +25,7 @@ def main():
 
     #TODO construir un nuevo genrador de senales
 
+    generador = gen.Generador(amplitud, fase, frecuencia)
     #TODO construir un detector
 
     #TODO construir un nuevo radar
@@ -40,6 +41,8 @@ def main():
     #TODO contruir un medio
 
     #TODO construir un radar
+
+    print generador.generar(tiempo_inicial, tiempo_final)
 
 if __name__ == "__main__":
     main()

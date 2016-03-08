@@ -9,6 +9,9 @@ class Blancocluter(Blanco):
     def __init__(self, amplitud, tiempo_inicial, tiempo_final):
         #TODO: completar con la inicializacion de los parametros del objeto
         pass
+        self.amplitud = amplitud
+        self.tiempo_inicial = tiempo_inicial
+        self.tiempo_final = tiempo_final
 
     def reflejar(self, senal, tiempo_inicial, tiempo_final):
 
