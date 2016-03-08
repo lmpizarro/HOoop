@@ -23,8 +23,13 @@ class Generador(object):
 
         muestras = range(int(cantidad_muestras))
         #TODO agregar un ruido blanco a la senal
+        import numpy as np
 
-        ret = [self.amplitud*math.sin(2*(1/self.frecuencia)*i+self.fase) \
+        mn = 0
+        std = 10
+        noise = np.random.normal(mn, std, int(cantidad_muestras))
+
+        ret = [noise[i] + self.amplitud*math.sin(2*(1/self.frecuencia)*i+self.fase) \
         for i in muestras]
 
         return ret

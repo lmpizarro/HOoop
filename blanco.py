@@ -12,9 +12,17 @@ class Blanco(object):
 
 
     def reflejar(self, senal, tiempo_inicial, tiempo_final):
-
+        
         #TODO ver como se encajan los tiempos del blanco y del intervalo de tiempo
         #(interseccion de invervalos)
         # despues aplicar los parametros del blanco sobre ese intervalo de tiempo
-        pass
+        # tiempo_inicial del radar encendido
+        # tiempo final del radar encendido
+        detected = False
+        if tiempo_inicial <= self.tiempo_inicial:
+           if tiempo_final >= self.tiempo_final:
+              detected = True
+
+
+        return detected
         

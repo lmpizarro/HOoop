@@ -23,6 +23,5 @@ class Radar(object):
          tiempo_final)
         #
         return self.detector.detectar(una_senal_reflejada)
-        pass
 
     #TODO agregar el metodo plotear_senal

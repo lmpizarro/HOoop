@@ -28,7 +28,6 @@ def main():
 
     #TODO construir un detector
     mi_detector = detector.Detector()
-    
 
     #TODO construir un nuevo radar
     mi_radar = radar.Radar(mi_generador, mi_detector)
@@ -49,7 +48,9 @@ def main():
 
     #TODO llamar a la funcion detectar del  radar
 
-    mi_radar.detectar(mi_medio, tiempo_inicial, tiempo_final)
+    detected = mi_radar.detectar(mi_medio, tiempo_inicial, tiempo_final)
+
+    print detected
 
 if __name__ == "__main__":
     main()
