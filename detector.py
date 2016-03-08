@@ -5,6 +5,9 @@ class Detector(object):
         pass
 
     def detectar(self, senal):
+        '''
+        senal: es la senal reflejada por el medio
+        '''
 
         #TODO: Completar
         pass

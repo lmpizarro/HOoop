@@ -40,9 +40,12 @@ def main():
     #TODO contruir un nuevo blanco
     mi_blanco = blanco.Blanco(amplitud_de_frecuencia_del_blanco, tiempo_inicial_del_blanco, tiempo_final_del_blanco)
 
-    #TODO contruir un medio
 
-    mi_medio = medio.Medio(mi_blanco)
+    blancos = [mi_blanco]
+    #TODO contruir un medio
+    
+
+    mi_medio = medio.Medio(blancos)
 
     #TODO llamar a la funcion detectar del  radar
 
