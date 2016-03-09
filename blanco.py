@@ -19,10 +19,15 @@ class Blanco(object):
         # tiempo_inicial del radar encendido
         # tiempo final del radar encendido
         detected = False
-        if tiempo_inicial <= self.tiempo_inicial:
-           if tiempo_final >= self.tiempo_final:
-              detected = True
+        condition1 = self.tiempo_final > tiempo_inicial
+        condition2 = self.tiempo_inicial < tiempo_final 
+        if condition1 and condition2 :
+              t = self.tiempo_final - self.tiempo_inicial
+              if self.tiempo_final > tiempo_final:
+                  t = tiempo_final - self.tiempo_inicial
+              if self.tiempo_inicial < tiempo_inicial:
+                  t = self.tiempo_final - tiempo_inicial
 
 
-        return detected
+        return t
         

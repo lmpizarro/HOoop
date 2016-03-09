@@ -4,10 +4,13 @@ class Detector(object):
         #TODO: completar con la inicializacion de los parametros del objeto
         pass
 
-    def detectar(self, senal):
+    def detectar(self, senales):
         '''
         senal: es la senal reflejada por el medio
         '''
 
+        detector_status = []
+        for senal in senales:
+            detector_status.append(senal)
         #TODO: Completar
-        pass
+        return detector_status

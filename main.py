@@ -50,7 +50,8 @@ def main():
 
     detected = mi_radar.detectar(mi_medio, tiempo_inicial, tiempo_final)
 
-    print detected
+    for d in detected:
+        print 'd', d
 
 if __name__ == "__main__":
     main()

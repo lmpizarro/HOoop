@@ -11,8 +11,9 @@ class Medio(object):
         """
 
         #TODO reflejar en un medio debe reflejar en todos los blancos de un medio
-        #y devolver la senal 
+        #y devolver la senal
+        estado = [] 
         for blanco in self.blancos:
-            print "para cada blanco" 
-            print blanco.reflejar(una_senal, tiempo_inicial, tiempo_final)
-        pass
+            estado.append(blanco.reflejar(una_senal, tiempo_inicial, tiempo_final))
+
+        return estado

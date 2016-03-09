@@ -22,6 +22,7 @@ class Radar(object):
         una_senal_reflejada = medio.reflejar(una_senal, tiempo_inicial, \
          tiempo_final)
         #
+        una_senal_reflejada
         return self.detector.detectar(una_senal_reflejada)
 
     #TODO agregar el metodo plotear_senal
